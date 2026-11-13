@@ -1,0 +1,16 @@
+[Unit]
+Description=TuxGenie Razer device daemon (restores your Razer settings)
+Documentation=file://%h/.local/share/doc/tuxgenie/README.md
+# Both daemons write the same sysfs files; only one may run.
+Conflicts=openrazer-daemon.service
+After=openrazer-daemon.service
+
+[Service]
+Type=dbus
+BusName=io.github.raevibe.TuxGenie
+ExecStart=@BINDIR@/tuxgenied
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=default.target

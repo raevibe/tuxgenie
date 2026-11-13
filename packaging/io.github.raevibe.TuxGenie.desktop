@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=TuxGenie
+GenericName=Razer Device Settings
+Comment=Configure lighting, DPI and power settings of Razer devices
+Exec=@BINDIR@/tuxgenie
+Icon=io.github.raevibe.TuxGenie
+Terminal=false
+Categories=Settings;HardwareSettings;
+Keywords=razer;rgb;chroma;keyboard;mouse;dpi;openrazer;
+StartupWMClass=io.github.raevibe.TuxGenie

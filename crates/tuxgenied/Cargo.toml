@@ -1,0 +1,15 @@
+[package]
+name = "tuxgenied"
+description = "TuxGenie daemon: applies and remembers Razer device settings via the OpenRazer kernel driver"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+tuxgenie-core = { path = "../tuxgenie-core" }
+serde.workspace = true
+serde_json.workspace = true
+zbus.workspace = true
+anyhow.workspace = true
+log.workspace = true
+env_logger.workspace = true

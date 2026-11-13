@@ -1,0 +1,4 @@
+[D-BUS Service]
+Name=io.github.raevibe.TuxGenie
+Exec=@BINDIR@/tuxgenied
+SystemdService=tuxgenied.service
